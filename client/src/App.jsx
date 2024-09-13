@@ -39,7 +39,13 @@ function App() {
     <div className="bg-neutral-800">
       <div className="grid grid-cols-3 gap-4 p-10">
         {decks.map((deck) => (
-          <Deck key={deck._id} title={deck.title} setDecks={setDecks} id={deck._id}/>
+          <Deck
+            key={deck._id}
+            title={deck.title}
+            setDecks={setDecks}
+            decks={decks}
+            id={deck._id}
+          />
         ))}
       </div>
 
